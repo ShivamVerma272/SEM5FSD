@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Nested Box Layout</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+
+    .row {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+
+    .box {
+      flex: 1;
+      height: 200px;
+      background-color: #060606;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+      font-size: 18px;
+      position: relative;
+    }
+
+    .nested-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 10px;
+      width: 90%;
+      height: 90%;
+    }
+
+    .nested-box {
+      background-color: #FFC107;
+      color: rgb(198, 34, 34);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 6px;
+      font-size: 14px;
+      overflow: hidden;
+    }
+
+    .nested-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+
+  
+
+  <div class="row">
+    <div class="box">
+      <div class="nested-container">
+        <div class="nested-box"><img src="https://www.pixelstalk.net/wp-content/uploads/2016/06/HD-images-of-nature-download.jpg" alt="Image 1"></div>
+        <div class="nested-box"><img src="https://tse3.mm.bing.net/th/id/OIP.b7pX53-YGRddIVqSE8qDAAHaEK?pid=Api&P=0&h=180" alt="Image 2"></div>
+        <div class="nested-box"><img src="https://www.pixelstalk.net/wp-content/uploads/2016/07/Background-Beautiful-Nature-Images-HD.jpg" alt="Image 3"></div>
+        <div class="nested-box"><img src="https://tse2.mm.bing.net/th?id=OIF.4%2bPLgKJRONMOowtY9IgIIQ&pid=Api&P=0&h=180" alt="Image 4"></div>
+      </div>
+    </div>
+    <div class="box"></div>
+  </div>
+
+  <div class="row">
+    <div class="box"></div>
+    <div class="box">
+      <div class="nested-container">
+        <div class="nested-box"><img src="https://s.yimg.com/uu/api/res/1.2/1wbCGSf9iMjsMBuwCGW74A--~B/aD0xMjgwO3c9MTkyMDthcHBpZD15dGFjaHlvbg--/https://media-mbst-pub-ue1.s3.amazonaws.com/creatr-uploaded-images/2022-10/5443e9a0-4fc2-11ed-b9fb-a0cd117f4ea2.cf.jpg" alt="Image 5"></div>
+        <div class="nested-box"><img src="https://cdn.wallpapersafari.com/14/68/BE9xq5.jpg" alt="Image 6"></div>
+        <div class="nested-box"><img src="https://img.freepik.com/premium-photo/happy-diwali-indian-festival-background-with-candles-diwali-day-happy-diwali-day_692702-2604.jpg?w=2000" alt="Image 7"></div>
+        <div class="nested-box"><img src="https://tse4.mm.bing.net/th/id/OIP.6YY80xg4wCEMkbY95XTt7wHaE8?pid=Api&P=0&h=180" alt="Image 8"></div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
